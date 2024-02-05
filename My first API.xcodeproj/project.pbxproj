@@ -13,6 +13,7 @@
 		33DD15912B70FE1F008064E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DD158F2B70FE1F008064E3 /* Main.storyboard */; };
 		33DD15932B70FE21008064E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33DD15922B70FE21008064E3 /* Assets.xcassets */; };
 		33DD15962B70FE21008064E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33DD15942B70FE21008064E3 /* LaunchScreen.storyboard */; };
+		33DD159F2B710111008064E3 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DD159E2B710111008064E3 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		33DD15922B70FE21008064E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33DD15952B70FE21008064E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33DD15972B70FE21008064E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DD159E2B710111008064E3 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		33DD15882B70FE1F008064E3 /* My first API */ = {
 			isa = PBXGroup;
 			children = (
+				33DD159D2B710099008064E3 /* Models */,
 				33DD15892B70FE1F008064E3 /* AppDelegate.swift */,
 				33DD158B2B70FE1F008064E3 /* SceneDelegate.swift */,
 				33DD158D2B70FE1F008064E3 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				33DD15972B70FE21008064E3 /* Info.plist */,
 			);
 			path = "My first API";
+			sourceTree = "<group>";
+		};
+		33DD159D2B710099008064E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33DD159E2B710111008064E3 /* Course.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DD159F2B710111008064E3 /* Course.swift in Sources */,
 				33DD158E2B70FE1F008064E3 /* ViewController.swift in Sources */,
 				33DD158A2B70FE1F008064E3 /* AppDelegate.swift in Sources */,
 				33DD158C2B70FE1F008064E3 /* SceneDelegate.swift in Sources */,
@@ -307,9 +319,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DmitryParhomenko.My-first-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,9 +351,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DmitryParhomenko.My-first-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
