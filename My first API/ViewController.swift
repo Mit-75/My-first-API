@@ -20,6 +20,8 @@ enum Link {
 }
 
 final class ViewController: UIViewController {
+  
+    // MARK: - Outlets
     
     @IBOutlet var imageCourse: UIImageView!
     @IBOutlet var courseName: UILabel!
