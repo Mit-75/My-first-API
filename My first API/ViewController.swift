@@ -42,21 +42,33 @@ extension ViewController {
     private func fetchCourse() {
         URLSession.shared.dataTask(with: Link.courseURL.url) { [weak self]
             data, _, error in
-            guard let self else { return }
+            guard let self = self else { return }
             guard let data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
-            DispatchQueue.main.async {
-                do {
-                    let course = try JSONDecoder().decode(Course.self, from: data)
-//                    self.imageCourse.image = UIImage(data: course.imageUrl)
-//                    self.activityIndicator.stopAnimating()
-                    print(course)
-                } catch {
-                    print(error.localizedDescription)
+            do {
+                let course = try JSONDecoder().decode(Course.self, from: data)
+                DispatchQueue.main.async { [weak self] in
+                    guard let self else { return }
+                    courseName.text = course.name
+                    lessonNumber.text = "Namber of lesson - \(course.number_of_lessons)"
+                    testNumber.text = "Namber of test -\(course.number_of_tests)"
                 }
+                guard let url = URL(string: course.imageUrl) else { return }
+                let data = try? Data(contentsOf: url)
+                
+                DispatchQueue.main.async { [weak self] in
+                    guard let self else { return }
+                    print(Thread.current)
+                    guard let data else { return }
+                    self.imageCourse.image = UIImage(data: data)
+                    self.activityIndicator.stopAnimating()
+                }
+            } catch {
+                print(error.localizedDescription)
             }
-            }.resume()
+        }.resume()
     }
 }
+

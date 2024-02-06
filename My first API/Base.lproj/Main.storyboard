@@ -17,58 +17,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g2m-on-5j4">
-                                <rect key="frame" x="5" y="25" width="365" height="340"/>
+                                <rect key="frame" x="50" y="160" width="275" height="200"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="340" id="vGI-gm-OoJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="vGI-gm-OoJ"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="SWd-Ye-A6H">
-                                <rect key="frame" x="16" y="390" width="343" height="154"/>
+                                <rect key="frame" x="16" y="385" width="343" height="119"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-q1-5EQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number of lessons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-nc-GYF">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW2-nc-GYF">
-                                        <rect key="frame" x="0.0" y="59" width="343" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1X-Ft-Eue">
-                                        <rect key="frame" x="0.0" y="118" width="343" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="number of test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1X-Ft-Eue">
+                                        <rect key="frame" x="0.0" y="71" width="343" height="48"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7FX-Xw-0cz">
-                                <rect key="frame" x="169" y="176.5" width="37" height="37"/>
+                                <rect key="frame" x="169" y="241.5" width="37" height="37"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="course" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dA-q1-5EQ">
+                                <rect key="frame" x="16" y="80" width="343" height="48"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="SWd-Ye-A6H" firstAttribute="top" secondItem="g2m-on-5j4" secondAttribute="bottom" constant="25" id="10C-te-0PN"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5NI-Uo-mfV"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B2N-Sw-WkZ"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bc2-Uv-Xax"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D8T-bH-XfW"/>
+                            <constraint firstItem="2dA-q1-5EQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="F1T-ov-emA"/>
                             <constraint firstItem="SWd-Ye-A6H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JWk-C1-H4C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SWd-Ye-A6H" secondAttribute="trailing" constant="16" id="MKO-1q-rES"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g2m-on-5j4" secondAttribute="trailing" constant="5" id="a5A-fQ-z1k"/>
-                            <constraint firstItem="g2m-on-5j4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="cfG-VZ-RID"/>
-                            <constraint firstItem="g2m-on-5j4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="itM-02-0BL"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerY" secondItem="g2m-on-5j4" secondAttribute="centerY" id="kVe-Ur-Wgq"/>
-                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txe-he-vIt"/>
+                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerY" secondItem="g2m-on-5j4" secondAttribute="centerY" id="WoW-Vy-aTB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g2m-on-5j4" secondAttribute="trailing" constant="50" id="a5A-fQ-z1k"/>
+                            <constraint firstItem="g2m-on-5j4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="cfG-VZ-RID"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2dA-q1-5EQ" secondAttribute="trailing" constant="16" id="dbp-9z-wvY"/>
+                            <constraint firstItem="7FX-Xw-0cz" firstAttribute="centerX" secondItem="g2m-on-5j4" secondAttribute="centerX" id="fUM-z4-56z"/>
+                            <constraint firstItem="g2m-on-5j4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="itM-02-0BL"/>
+                            <constraint firstItem="g2m-on-5j4" firstAttribute="top" secondItem="2dA-q1-5EQ" secondAttribute="bottom" constant="32" id="zao-hE-JGa"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="7FX-Xw-0cz" id="8TL-fT-37E"/>
+                        <outlet property="activityIndicator" destination="7FX-Xw-0cz" id="hSS-NJ-cHE"/>
                         <outlet property="courseName" destination="2dA-q1-5EQ" id="Rwc-d6-zEg"/>
                         <outlet property="imageCourse" destination="g2m-on-5j4" id="hdA-oi-8Cy"/>
                         <outlet property="lessonNumber" destination="qW2-nc-GYF" id="imv-rH-S57"/>
@@ -81,11 +80,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
